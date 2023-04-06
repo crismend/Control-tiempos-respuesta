@@ -1,0 +1,161 @@
+body {
+  background-color: #adf3ce;
+  background-image: linear-gradient(45deg, #bff8d9 0%, #f8f6ba 100%);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.logo{
+  width: 10%;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.titulo {
+  font-size: 35px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.clock-holder {
+  width: 45%;
+  background: radial-gradient(ellipse, rgb(237, 236, 241) 0%, rgb(251, 240, 240));
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5%;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.display {
+  padding: 50px 0px;
+  text-align: center;
+}
+
+.display span{
+  background: #029d9b;
+   color: #fff;
+   display: inline-block;
+   font-family: monospace;
+   font-size: 22px;
+   padding: 20px;
+   margin-right: 2px;
+   border-radius: 5px;
+   box-shadow: rgba(0, 0, 0, 0.4) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.5) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.1) 0px 2px 1px, rgba(0, 0, 0, 0.4) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+   width: 70px;
+ }
+
+.button {
+  padding: 0 16px;
+  margin: 5px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #61b6b6;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.6) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.5) 0px 2px 1px, rgba(0, 0, 0, 0.4) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  color: rgb(248, 247, 247);
+  transition: background-color 15ms linear,
+    box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  height: 38px;
+  line-height: 2.25rem;
+  font-family: Roboto, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button:hover, .button:focus {
+     box-shadow: rgba(0, 0, 0, 0.4) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.1) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.1) 0px 2px 1px, rgba(0, 0, 0, 0.4) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  background-color: #187777;
+}
+
+.button:active {
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  background-color: #287977;
+}
+
+.tituloR {
+  margin-bottom: 1.3rem;
+}
+
+.listaTiempos {
+  width: 35%;
+  background-color: #fefffb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-style: double;
+  border-radius: 30px ;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.tiempoRegistrado {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 600;
+
+}
+
+.borrarList{
+  margin-top: 15px;
+}
+
+/* mediaquery */
+
+@media(max-width: 60rem){ /* 950px */
+  .clock-holder {
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .display {
+    padding: 20px 0px;
+    text-align: center;
+  }
+
+  .button {
+    padding: 0 22px;
+    height: 40px;
+  }
+
+  .listaTiempos {
+    width: 43vh;
+    background-color: #fefffb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-style: double;
+    border-radius: 30px ;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+
+}
+
+
+
+
+
+
