@@ -82,7 +82,7 @@ function App() {
         <div className='botones'>
           <button className='button' onClick={() => setTimerOn(true)}>Start</button>
           <button className='button' onClick={() => timeList()}>Stop</button>
-          <button className='button' onClick={() => setTimerOn(true)}>Resume</button>
+          {/* <button className='button' onClick={() => setTimerOn(true)}>Resume</button> */}
           <button className='button' onClick={() => setTime(0)}>Reset</button>
         </div>
       </div>
